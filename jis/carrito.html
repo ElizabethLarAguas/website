@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MAS ALLA DE LA PINTURA</title>
+    <link rel="stylesheet" href="style/carrito.css" />
+  </head>
+  <body>
+    <header>
+      <!-- barra de navegación -->
+      <div class="interior">
+        <!-- logo -->
+        <a href="" class="logo"><img src="img/mas alla.png" alt="" /></a>
+        <!-- menu de navegación -->
+        <nav class="navegacion">
+          <ul>
+            <li><a href="servicios.html">servicios</a></li>
+            <li><a href="carrito.html">carrito</a></li>
+            <li><a href="catalogo.html">catalogo</a></li>
+            <li><a href="sobre.html">sobre</a></li>
+            <li><a href="micuenta.html">mi cuenta</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <nav><h2>Carrito de Compras</h2></nav>
+        <div class="grid">
+          <div class="items">
+            <img
+              src="https://i.pinimg.com/236x/de/a3/69/dea369f19086dbc006dac57637e1e2b1.jpg"
+            />
+            <div class="mascadores">
+              <h3>Marcadores uniPOSCA</h3>
+              <p>Elizabeth Lara</p>
+              <div class="precio">
+                <p>$15,000</p>
+              </div>
+              <input
+                type="number"
+                name=""
+                id="unidades1"
+                data-producto="1"
+                min="0"
+              />
+              <button onclick="agregarAlCarrito(1)">Agregar Unidades</button>
+            </div>
+          </div>
+          <div class="items">
+            <img
+              src="https://i.pinimg.com/236x/b3/b9/55/b3b95596e6719b5ed7624097b8f95801.jpg"
+            />
+            <div class="pinturas">
+              <h3>Juego De Pintura</h3>
+              <p>Jisel Rojas</p>
+              <div class="precio">
+                <p>$19,000</p>
+                <p>$23,000</p>
+              </div>
+              <input
+                type="number"
+                name=""
+                id="unidades2"
+                data-producto="2"
+                min="0"
+              />
+              <button onclick="agregarAlCarrito(2)">Agregar Unidades</button>
+            </div>
+          </div>
+          <div class="items">
+            <img
+              src="https://i.pinimg.com/236x/14/43/f8/1443f88ea312fe0feba5d8bdf9b30fa6.jpg"
+            />
+            <div class="pinceles">
+              <h3>Juego De Pinceles</h3>
+              <p>Juan Martinez</p>
+              <div class="precio">
+                <p>$99,900</p>
+                <p>$130,000</p>
+              </div>
+              <input
+                type="number"
+                name=""
+                id="unidades3"
+                data-producto="3"
+                min="0"
+              />
+              <button onclick="agregarAlCarrito(3)">Agregar Unidades</button>
+            </div>
+          </div>
+          <div class="items">
+            <img
+              src="https://i.pinimg.com/236x/02/7c/ac/027cac39c3e74a654656effdc0620656.jpg"
+            />
+            <div class="paleta">
+              <h3>Paleta de pinturas</h3>
+              <p>Jisel Rojas</p>
+              <div class="precio">
+                <p>$99,900</p>
+                <p>$130,000</p>
+              </div>
+              <input
+                type="number"
+                name=""
+                id="unidades4"
+                data-producto="4"
+                min="0"
+              />
+              <button onclick="agregarAlCarrito(4)">Agregar Unidades</button>
+            </div>
+          </div>
+          <div class="items">
+            <img
+              src="https://i.pinimg.com/236x/98/17/5a/98175af5686307b6ed2a1641f4d65e97.jpg"
+            />
+            <div class="tripode">
+              <h3>Trípode</h3>
+              <p>lizzy</p>
+              <div class="precio">
+                <p>$45,000</p>
+              </div>
+              <input
+                type="number"
+                name=""
+                id="unidades5"
+                data-producto="5"
+                min="0"
+              />
+              <button onclick="agregarAlCarrito(5)">Agregar Unidades</button>
+            </div>
+          </div>
+          <div class="items">
+            <img
+              src="totenart-lienzo-derwnet_1.jpg"
+            />
+            <div class="lienzo">
+              <h3>Lienzo para Pintura</h3>
+              <p>mendez mendez</p>
+              <div class="precio">
+                <p>$25,000</p>
+              </div>
+              <input
+                type="number"
+                name=""
+                id="unidades7"
+                data-producto="7"
+                min="0"
+              />
+              <button onclick="agregarAlCarrito(7)">Agregar Unidades</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="carrito">
+        <nav><h2>Resumen del Carrito</h2></nav>
+        <div id="carrito-items">
+          <!-- Aquí se mostrarán los productos en el carrito -->
+        </div>
+        <div class="carrito-total">
+          <h3>Total:</h3>
+          <h3 id="total-precio">$0</h3>
+          <h4 id="iva">IVA: $0.00</h4>
+        </div>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+      </div>
+    </section>
+  <footer>
+    <table>
+      <tr>
+        <td>
+        <ul>
+        <h4><li>HORARIO </li></h4>
+        <h4><li> De martes a domingo  </li></h4>
+        <h4><li>10:00am</li></h4>
+        <h4><li>1:00pm</li></h4>
+        <h4><li>10:00pm</li></h4>
+        </ul>
+        </td>
+      <td> 
+        <ul>
+          <h4><li>Telefono:</li></h4>
+          <h4><li>3223282069</li></h4>
+          <h4><li>Avenida Abandoibarra, 2 48009 Bilbao</li></h4>
+          <h4><li>Propietarios de Hoteles</li></h4>
+          <h4><li>Socios</li></h4>
+        </ul>
+    </td>
+      <td> 
+        <ul>
+          <h4> <li>EL MUSEO </li></h4>
+          <h4><li>Aserca Del Museo</li></h4>
+          <h4><li>Contratacion</li></h4>
+          <h4><li>Area De Prensa</li></h4>
+        </ul>
+      </td>
+      <td> 
+        <ul>
+          <h4> <li>Region/Divisa</li></h4>
+          <select name="City">
+            <option value="Italia">Italia</option>
+            <option value="Ecuador">Ecuador </option>
+            <option value="Mexico">Mexico </option> </p>
+            <option value="Nueva York">Nueva York</option>
+            <option value="España">España</option> 
+           </select> 
+           <p>
+           <select name="MONEY">
+            <option value="Italia">Euro</option>
+            <option value="Ecuador">Dolar </option>
+            <option value="Mexico">mxn</option> </p>
+            <option value="Nueva York">Dolar</option>
+            <option value="España">Euro</option>
+           </select> 
+          </p>  
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td id="hola"> <a href="https://www.guggenheim-bilbao.eus/acerca-del-museo"><h4> acerca-del-museo</td></h4>
+      <td id="como"> <a href="https://www.guggenheim-bilbao.eus/contratacion"><h4> Contratacion</td></h4>
+      <td id="esta"> <a href="https://prensa.guggenheim-bilbao.eus/"><h4> Area de Prensa</td></h4>
+      <td id="HOLA"> <a href="https://www.guggenheim-bilbao.eus/sabias-que/mas-alla-de-la-pintura"><h4>@2023 MAS ALLA QUE LA PINTURA</td></h4>
+    </tr>
+    <tr>
+    <td id="papa"colspan="4"> <li>  </li> </td> 
+    </tr>
+  </table>
+  </footer>
+  <script src="src/carrito.js"></script>
+  </body>
+</html>
